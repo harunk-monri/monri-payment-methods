@@ -1,4 +1,4 @@
-# Instant Payments Serbia (IPS-RS)
+# IPS - Instant Payments Serbia
 
 ## Step 1: Set up IPS-RS Component
 
