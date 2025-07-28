@@ -1,3 +1,4 @@
 # Table of contents
 
-* [Page](README.md)
+* [Monri Components - Payment Methods](README.md)
+* [Instant Payments Serbia (IPS-RS)](instant-payments-serbia-ips-rs.md)
