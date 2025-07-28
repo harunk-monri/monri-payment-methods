@@ -49,7 +49,7 @@ const payCek = components.create("pay-cek", {
     // define styling options for pay-cek Components
     style: {}
 });
-// Add an instance of the Ips-Rs component into the `pay-cek-element` <div>.
+// Add an instance of the PayCek component into the `pay-cek-element` <div>.
 payCek.mount("pay-cek-element");
 ```
 
