@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Monri Components - Payment Methods](README.md)
+* [Payment Methods via Components](README.md)
 * [Google Pay](google-pay.md)
 * [Apple Pay](apple-pay.md)
 * [Keks Pay](keks-pay.md)
