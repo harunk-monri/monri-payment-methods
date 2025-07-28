@@ -1,9 +1,13 @@
+---
+cover: .gitbook/assets/cover.png
+coverY: 0
+---
+
 # IPS - Instant Payments Serbia
 
 ## Step 1: Set up IPS-RS Component
 
-The `ips-rs` component is available as part of `Monri.js`. To get started, include the following script on your page.
-This script **must be loaded directly from `monri.com`** to remain PCI-compliant —**you cannot self-host or bundle it**.
+The `ips-rs` component is available as part of `Monri.js`. To get started, include the following script on your page. This script **must be loaded directly from `monri.com`** to remain PCI-compliant —**you cannot self-host or bundle it**.
 
 ### Test Environment
 
@@ -24,11 +28,11 @@ const monri = Monri('<authenticity-token>');
 const components = monri.components({clientSecret: '<client-secret>'});
 ```
 
-Replace ```<authenticity-token>``` with the value from your merchant dashboard.
+Replace `<authenticity-token>` with the value from your merchant dashboard.
 
-Replace ```<client-secret>``` with the value obtained when creating a payment via your backend.
+Replace `<client-secret>` with the value obtained when creating a payment via your backend.
 
-⚠️ When switching to production, ensure you're using your production ```authenticity_token``` and ```client_secret```.
+⚠️ When switching to production, ensure you're using your production `authenticity_token` and `client_secret`.
 
 ## Step 2: Create your Payment Form Container
 
@@ -157,7 +161,7 @@ ips.on('paymentError', (error) => {
 ```
 
 | Option        | Description                                                         |
-|---------------|---------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------- |
 | `trx_token`   | Token received when creating the transaction on backend             |
 | `environment` | Either `'test'` or `'prod'`, depending on your system               |
 | `style`       | Optional custom styles for component containers (see example above) |

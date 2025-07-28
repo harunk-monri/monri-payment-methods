@@ -1,9 +1,13 @@
+---
+cover: .gitbook/assets/cover.png
+coverY: 0
+---
+
 # Apple Pay
 
 ## Step 1: Set up Apple Pay Component
 
-The `apple-pay` component is part of `Monri.js`. To start, include the official Monri script on your page.
-This script must be loaded directly from Monri servers to stay PCI-compliant — do not self-host or bundle it.
+The `apple-pay` component is part of `Monri.js`. To start, include the official Monri script on your page. This script must be loaded directly from Monri servers to stay PCI-compliant — do not self-host or bundle it.
 
 ## Test Environment
 
@@ -40,7 +44,7 @@ Add a div where the Apple Pay button will be injected:
 
 ### Step 3: Initialize and Mount apple-pay Component
 
-Create and mount the component. You must pass trx_token and transaction data required for authorization.
+Create and mount the component. You must pass trx\_token and transaction data required for authorization.
 
 ```js
 const applePay = components.create("apple-pay", {
@@ -80,16 +84,16 @@ applePay.on('paymentError', (error) => {
 ### Parameters
 
 | Option        | Description                                                        |
-|---------------|--------------------------------------------------------------------|
+| ------------- | ------------------------------------------------------------------ |
 | `trx_token`   | Token received when creating the transaction on backend            |
 | `environment` | Either `'test'` or `'prod'`, depending on your system              |
 | `transaction` | Object with buyer and order data (see below)                       |
-| `style`       | *(optional)* Custom styles — limited styling options for Apple Pay |
+| `style`       | _(optional)_ Custom styles — limited styling options for Apple Pay |
 
 ### Transaction fields
 
 | Field          | Description                                  |
-|----------------|----------------------------------------------|
+| -------------- | -------------------------------------------- |
 | `ch_full_name` | Cardholder full name                         |
 | `address`      | Billing address                              |
 | `city`         | City                                         |
