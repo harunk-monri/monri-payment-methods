@@ -2,7 +2,7 @@
 
 ## Step 1: Set up Google Pay Component
 
-The `google-pay `component is part of `Monri.js`. To start, include the official Monri script on your page.
+The `google-pay` component is part of `Monri.js`. To start, include the official Monri script on your page.
 This script must be loaded directly from Monri servers to stay PCI-compliant — do not self-host or bundle it.
 
 ## Test Environment
