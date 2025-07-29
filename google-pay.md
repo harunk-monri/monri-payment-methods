@@ -7,7 +7,8 @@ coverY: 0
 
 ## Step 1: Set up Google Pay Component
 
-The `google-pay` component is part of `Monri.js`. To start, include the official Monri script on your page. This script must be loaded directly from Monri servers to stay PCI-compliant — do not self-host or bundle it.
+The `google-pay` component is part of `Monri.js`. To start, include the official Monri script on your page. This script
+must be loaded directly from Monri servers to stay PCI-compliant — do not self-host or bundle it.
 
 ## Test Environment
 
@@ -49,6 +50,12 @@ Create and mount the component. You must pass trx\_token and transaction data re
 ```js
 const googlePay = components.create("google-pay", {
     trx_token: "<trx_token>", // Transaction token from backend
+
+    //https://developers.google.com/pay/api/web/guides/resources/customize
+    buttonStyle: 'black', //white
+    buttonType: 'buy', //checkout,donate etc.
+    buttonLocale: 'en',
+
     environment: isTestSystem ? "test" : "prod",
     transaction: {
         ch_full_name: "John Doe",
@@ -84,7 +91,7 @@ googlePay.on('paymentError', (error) => {
 ### Parameters
 
 | Option        | Description                                                         |
-| ------------- | ------------------------------------------------------------------- |
+|---------------|---------------------------------------------------------------------|
 | `trx_token`   | Token received when creating the transaction on backend             |
 | `environment` | Either `'test'` or `'prod'`, depending on your system               |
 | `transaction` | Object with buyer and order data (see below)                        |
@@ -93,7 +100,7 @@ googlePay.on('paymentError', (error) => {
 ### Transaction fields
 
 | Field          | Description                                  |
-| -------------- | -------------------------------------------- |
+|----------------|----------------------------------------------|
 | `ch_full_name` | Cardholder full name                         |
 | `address`      | Billing address                              |
 | `city`         | City                                         |

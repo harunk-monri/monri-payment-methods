@@ -7,7 +7,8 @@ coverY: 0
 
 ## Step 1: Set up Apple Pay Component
 
-The `apple-pay` component is part of `Monri.js`. To start, include the official Monri script on your page. This script must be loaded directly from Monri servers to stay PCI-compliant — do not self-host or bundle it.
+The `apple-pay` component is part of `Monri.js`. To start, include the official Monri script on your page. This script
+must be loaded directly from Monri servers to stay PCI-compliant — do not self-host or bundle it.
 
 ## Test Environment
 
@@ -49,6 +50,9 @@ Create and mount the component. You must pass trx\_token and transaction data re
 ```js
 const applePay = components.create("apple-pay", {
     trx_token: "<trx_token>", // Transaction token from backend
+    locale: 'en-US', //https://developer.apple.com/documentation/applepayontheweb/applepaybuttonlocale
+    buttonStyle: 'black', //'white' or 'white-outline'
+    buttonType: 'buy', //https://developer.apple.com/documentation/applepayontheweb/applepaybuttontype
     environment: isTestSystem ? "test" : "prod",
     transaction: {
         ch_full_name: "John Doe",
@@ -84,7 +88,7 @@ applePay.on('paymentError', (error) => {
 ### Parameters
 
 | Option        | Description                                                        |
-| ------------- | ------------------------------------------------------------------ |
+|---------------|--------------------------------------------------------------------|
 | `trx_token`   | Token received when creating the transaction on backend            |
 | `environment` | Either `'test'` or `'prod'`, depending on your system              |
 | `transaction` | Object with buyer and order data (see below)                       |
@@ -93,7 +97,7 @@ applePay.on('paymentError', (error) => {
 ### Transaction fields
 
 | Field          | Description                                  |
-| -------------- | -------------------------------------------- |
+|----------------|----------------------------------------------|
 | `ch_full_name` | Cardholder full name                         |
 | `address`      | Billing address                              |
 | `city`         | City                                         |
