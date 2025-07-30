@@ -5,40 +5,45 @@ coverY: 0
 
 # Payment Methods via Components
 
-<p align="center">💳 Unified Payment UI Components for Seamless Checkout Experiences</p>
+<p align="center">💳 Unified UI components for multiple payment methods</p>
 
 ***
 
-## Monri Components — Payment Methods
+## 🔗 Table of Contents
 
-### Available Integrations:
-
-<table><thead><tr><th width="158.09375">Payment method</th></tr></thead><tbody><tr><td><a href="google-pay.md">Google Pay</a></td></tr><tr><td><a href="apple-pay.md">Apple Pay</a></td></tr><tr><td><a href="keks-pay.md">Keks Pay</a></td></tr><tr><td><a href="aircash.md">AirCash</a></td></tr><tr><td><a href="flik-pay.md">Flik Pay</a></td></tr><tr><td><a href="instant-payments-serbia-ips-rs.md">IPS</a></td></tr><tr><td><a href="paycek.md">PayCek</a></td></tr><tr><td><a href="paypal.md">PayPal</a></td></tr><tr><td><a href="valu-pay.md">Valu Pay</a></td></tr></tbody></table>
-
-### 💡 About
-
-Monri Components allow you to integrate multiple payment methods using a unified and secure JavaScript SDK.
-
-* PCI-compliant components
-* One integration – many methods
-* Custom styling support
-* Events and error handling hooks
-* Mobile-first and accessibility-ready
+- [Google Pay](google-pay.md)
+- [Apple Pay](apple-pay.md)
+- [Keks Pay](keks-pay.md)
+- [AirCash](aircash.md)
+- [Flik Pay](flik-pay.md)
+- [IPS (Serbia)](instant-payments-serbia-ips-rs.md)
+- [PayCek](paycek.md)
+- [PayPal](paypal.md)
+- [Valu Pay](valu-pay.md)
 
 ***
 
-### 🚀 Getting Started
+## ⚙️ About
 
-Each method has its own guide with:
+Monri Components provide:
 
-* Integration steps
-* Example markup & scripts
-* Required parameters
-* Success/error handling
-
-Start with the method you want to implement and follow the instructions in the corresponding file.
+- Secure, PCI-compliant UI elements
+- Unified integration for multiple methods
+- Style customization
+- Event & error handling
+- Mobile & accessibility support
 
 ***
 
-For general integration questions, reach out to:\
-📩 [support@monri.com](mailto:support@monri.com)
+## 🚀 Integration
+
+Each method includes:
+
+- Setup instructions
+- Sample HTML/JS
+- Required parameters
+- Success & error handling
+
+***
+
+📬 For help, contact: [support@monri.com](mailto:support@monri.com)
